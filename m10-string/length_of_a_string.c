@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[101];
+    scanf("%s", &str);
+
+    // int count = 0;
+    // for (int i = 0; str[i] != '\0'; i++)
+    // {
+    //     count = count + 1;
+    // }
+
+    int sz = strlen(str);
+
+    printf("%d", sz);
+
+    return 0;
+}
