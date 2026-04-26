@@ -3,7 +3,6 @@
 
 int main()
 {
-
     int n;
     scanf("%d", &n);
     int arr[n];
@@ -12,24 +11,22 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int max = INT_MIN;
-    int min = INT_MAX;
-    int temp = max;
+    int minIdx = 0, maxIdx = 0, temp;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > max)
+        if (arr[i] < arr[minIdx])
         {
-            max = arr[i];
-            arr[i] = min;
+            minIdx = i;
         }
-        if (arr[i] < min)
+        if (arr[i] > arr[maxIdx])
         {
-            min = arr[i];
-            arr[i] = temp;
+            maxIdx = i;
         }
-
-
     }
+
+    temp = arr[minIdx];
+    arr[minIdx] = arr[maxIdx];
+    arr[maxIdx] = temp;
 
     for (int i = 0; i < n; i++)
     {
