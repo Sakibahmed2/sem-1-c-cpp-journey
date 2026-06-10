@@ -1,7 +1,7 @@
-3
-Sakib Ahmed
-12 88
-Rakib Khan
-33 65
-Akib hossain
-88 43
+6
+Sakib 12 88
+Rakib 33 65
+Akib 88 43
+Shofiq 22 46
+Rohim 44 65
+Korim 23 54
